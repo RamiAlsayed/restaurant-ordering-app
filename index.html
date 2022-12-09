@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Smythe&display=swap"
+      rel="stylesheet"
+    />
+    <title>Food Menu</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="top">
+        <h1>Jimmy's Diner</h1>
+        <h2>The best burgers and pizzas in town.</h2>
+      </div>
+
+      <div class="menuList"></div>
+      <div class="orderList">
+        <p id="order">Your order</p>
+      </div>
+      <div class="totalPrices pricesHome">
+        <h3>Total Price:</h3>
+        <h3>$0</h3>
+      </div>
+      <div><button class="green-btn">Complete order</button></div>
+    </div>
+
+    <!-- Form -->
+    <div class="form">
+      <p class="closeForm">X</p>
+      <div class="formBox">
+        <h2 id="card">Enter card details</h2>
+        <img class="imgPay" src="/img/icon.png" alt="payment icon" />
+        <form id="login-form">
+          <input
+            class="name-input"
+            type="text"
+            name="fullName"
+            placeholder="Enter your name"
+            required
+          />
+          <input
+            type="number"
+            name="number"
+            placeholder="Enter card number"
+            required
+          />
+          <input type="number" name="number" placeholder="Enter CVV" required />
+          <button class="pay-btn" type="submit">SUBMIT</button>
+        </form>
+        <div class="sumForm"></div>
+      </div>
+      <div class="final-massage"></div>
+    </div>
+
+    <script src="/data.js" type="module"></script>
+  </body>
+</html>

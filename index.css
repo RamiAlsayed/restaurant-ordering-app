@@ -1,0 +1,228 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: darkslategray;
+  font-family: 'Smythe', cursive;
+  font-size: 1.6rem;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  max-width: 450px;
+  height: auto;
+  background-color: white;
+
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+
+#topImg {
+  max-width: 100%;
+  height: 8vh;
+}
+
+h1,
+h2 {
+  color: blanchedalmond;
+
+  margin-left: 2rem;
+  font-weight: 400;
+  line-height: 17px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+h3 {
+  color: #353b48;
+}
+.top {
+  background-image: url(/img/ferks-guare-KEZdWfYD-ow-unsplash\ 1.png);
+  height: 20vh;
+  background-position: center;
+  background-size: cover;
+  font-size: 0.9rem;
+}
+
+.menuList {
+  padding: 3.8rem;
+  border-bottom: 1px solid black;
+}
+
+.menuName {
+  position: relative;
+}
+span {
+  position: absolute;
+  width: 508px;
+  height: 140px;
+  left: -40px;
+  top: -6px;
+  font-size: 2rem;
+}
+
+p {
+  font-size: 0.8rem;
+  color: #8b8b8b;
+}
+
+.price {
+  font-size: 1.7rem;
+}
+
+#plus {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  left: 300px;
+  top: 10px;
+  font-size: 2rem;
+}
+
+.fa-plus {
+  color: green;
+  font-size: 4rem;
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+/* style order list */
+
+#order {
+  text-align: center;
+  margin: 0 auto;
+  font-size: 1.5rem;
+  color: #353b48;
+  display: none;
+}
+
+.orderList {
+  display: flex;
+  flex-direction: column;
+  padding: 2.3rem;
+}
+
+.col {
+  display: inline-flex;
+  justify-content: space-between;
+  margin-right: 1px;
+  font-size: 1rem;
+}
+
+.btn {
+  margin-left: 0.2rem;
+  color: #bbbbbb;
+  border: none;
+  cursor: pointer;
+}
+
+.totalPrices,
+.pricesHome {
+  border-top: 1px solid black;
+  background-color: lightgrey;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2.3rem;
+}
+
+.green-btn {
+  background-color: #16db99;
+  color: white;
+  width: 100%;
+  height: 60px;
+  border: none;
+  cursor: pointer;
+}
+
+.form {
+  position: fixed;
+  bottom: 10px;
+  left: 7px;
+  right: 0;
+  background-color: lightsteelblue;
+  width: 300px;
+  height: 500px;
+  padding: 20px;
+  margin: 0 auto;
+  display: none;
+  opacity: 0.9;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 15px;
+  margin: 0 auto;
+  width: 250px;
+  margin-bottom: 15px;
+  height: 30px;
+}
+
+#card {
+  color: #353b48;
+  text-align: center;
+  margin-right: 20px;
+}
+
+.imgPay {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.pay-btn {
+  width: 259px;
+  margin: 0 auto;
+  background-color: #16db99;
+  border: none;
+  height: 30px;
+  color: white;
+  cursor: pointer;
+}
+
+.closeForm {
+  cursor: pointer;
+  font-size: 1.4rem;
+  width: 10px;
+  color: rgb(197, 85, 85);
+}
+
+.sumForm,
+.sumP,
+.text-message {
+  display: flex;
+  justify-content: center;
+  font-size: 1.5rem;
+  color: #353b48;
+}
+
+/* Media Queries */
+
+@media (max-width: 480px) {
+  .container {
+    width: auto;
+    margin: 0;
+  }
+
+  span {
+    width: 100%;
+  }
+
+  #plus {
+    width: 50px;
+    height: 50px;
+    left: 200px;
+    top: 10px;
+  }
+}
